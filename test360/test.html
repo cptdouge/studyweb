@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Test 360 Image</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script>
+           
+            function momap(){
+                document.getElementById("img-box").style.display= "flex";
+            }
+            function dongmap(){
+                document.getElementById("img-box").style.display= "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="img-box" id="img-box">
+            <iframe  src="https://momento360.com/e/u/d4e8f2fea2744996871c01343301a063?utm_campaign=embed&utm_source=other&heading=11.1&pitch=-9.35&field-of-view=75&size=medium" frameborder="0"></iframe>
+            <input type="button" class="button" id="btn-close" onclick="dongmap()">
+        </div>
+        <div class="wrapper" id="wrapper">
+            <img src="map.png" alt="map">
+            <input type="button" class="button" id="btn-open" onclick="momap()">
+        </div>
+    </body>
+</html>

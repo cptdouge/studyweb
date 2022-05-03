@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+body{
+    font-family: Arial;
+    font-weight: 300;
+}
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 150px 50px 900px;
+    grid-template-areas: 
+    "head head   head"
+    "nav  nav    nav"
+    "left center right";
+    gap: 1px;
+
+}
+.header{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 105, 201);
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+
+
+}
+.navbar{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 113, 61);
+    color: white;
+}
+.left{
+    grid-area: left;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 188, 64);
+}
+.right{
+    grid-area: right;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 188, 64);
+}
+.center{
+    grid-area: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 234, 196);
+}
+
+.nav{
+    padding: 10px 25px;
+    font-weight: 600;
+    border-left: 2px solid white;
+    cursor:pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.nav:last-child{
+    border-right: 2px solid white;
+}
+.nav:hover{
+    background-color: rgb(241, 68, 0);
+}
+
+.left h3{
+    line-height: 50px;
+    background-color: rgb(48, 156, 48);
+    text-align: center;
+    color: white;
+}
+.khoahoc a{
+    text-decoration: none;
+    line-height: 40px;
+    color: rgb(94, 32, 32);
+    font-size: 16px;
+    font-weight: 550;
+
+}
+.khoahoc{
+    padding: 3px 6px;
+    list-style-position:inside;
+    border-bottom: 1px solid rgb(131, 46, 46);
+}
+.khoahoc:hover{
+    background-color: rgb(231, 150, 0);
+}
+.center{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer{
+    display: flex;
+    background-color: black;
+    height: 40px;
+    line-height: 20px;
+    color:white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    bottom:0;
+    opacity: 0.5;
+
+
+}

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="tpyeuthich.css">
+        <script src="tpyeuthich.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align:center; margin-top: 20px;">BÌNH CHỌN THÀNH PHỐ YÊU THÍCH</h1>
+        <form name="formbinhchon" method="POST" action="#"> 
+            <label for="hoten">Họ tên:</label>
+            <input class="text" type="text" id="hoten" placeholder="Họ tên"><br><br>
+            <label for="phai">Phái:</label>
+            <input class="radio" type="radio" id="phainam" name="phai" value="nam">Nam
+            <input class="radio" type="radio" id="phainu"  name="phai" value="nu">Nữ<br><br>
+
+            <div id="checkbox">
+                Chọn Địa điểm:<br>
+                <input class="checkbox" type="checkbox" name="cacdiadiem" value="Hà Nội">Hà Nội<br>
+                <input class="checkbox" type="checkbox" name="cacdiadiem" value="Nha Trang">Nha Trang<br>
+                <input class="checkbox" type="checkbox" name="cacdiadiem" value="TP HCM">TP HCM<br>
+                <input class="checkbox" type="checkbox" name="cacdiadiem" value="Cần Thơ">Cần Thơ<br>
+            </div>
+
+
+            <br>Thành phố yêu thích nhất:<br>
+            <select id="thichnhat">
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Nha Trang">Nha Trang</option>
+                <option value="TP HCM">TP HCM</option>
+                <option value="Cần Thơ">Cần Thơ</option>
+            </select>
+
+
+            <br><br><input class="button" onclick="send()" type="button" value="Bình chọn">
+            <input class = "button" onclick="reset()" type="button" value="Reset">
+            <input class = "button" onclick="themtp()" type="button" value="Thêm TP">
+        </form>
+        <h3 style="text-align:center ;">Kết quả:</h3>
+        <p id="danhsachchon" style="text-align: center;">&nbsp;</p>
+    </body>
+</html>

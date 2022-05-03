@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stylesheets</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link id = "pagestyle" rel="stylesheet" href="">
+        <script type = "text/javascript" src = "test_css.js"></script>
+    </head>
+    <body>
+        <div class ="container">
+            <div class ="content" id = "c1">
+                <h1>Welcome to my homepage</h1>
+                <p>Use the menu to select different stylesheets</p>
+            </div>
+            <div class="content" id= "list">
+                <ul id = "listmenu">
+                    <li class="listitem" onClick="reStyle('test_CSS.css')">Stylesheet 1</li>
+                    <li class="listitem" onClick="reStyle('test_CSS2.css')">Stylesheet 2</li>
+                    <li class="listitem">Stylesheet 3</li>
+                    <li class="listitem">Stylesheet 4</li>
+                    <li class="listitem" onclick="reStyle('')">No Stylesheet</li>
+
+                </ul>
+            </div>
+
+                
+
+            <div class ="content" id = "c2">
+                <h1>Same page Different stylesheets</h1>
+                <p>This is a demonstration of how different stylesheets can change the layout of HTML page:</p>
+                <a href = "test_css.html">Stylesheet1</a>,<a href = "test_css.html">Stylesheet2</a>,<a href = "test_css.html">Stylesheet3</a>
+                ,<a href = "test_css.html">Stylesheet4</a>.
+            </div>
+            <div class ="content" id = "c3">
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see 
+                    what it looks like with no stylesheet.
+                </p>
+                <a href = "test_css.html">NoStylesheet</a>.
+
+            </div>
+            <div class="content" id="c4">
+                <h3>Side-Bar</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>
